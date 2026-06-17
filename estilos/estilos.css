@@ -508,6 +508,22 @@ body.homepage{
 
 @media (max-width: 980px){
 
+    .navegacion{
+        padding:12px 10px;
+    }
+
+    .menu{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:6px;
+    }
+
+    .menu a{
+        margin:0;
+        padding:8px 12px;
+    }
+
     .sobre_principal{
         grid-template-columns:1fr;
         gap:40px;
@@ -532,20 +548,61 @@ body.homepage{
 
 @media (max-width: 768px){
 
+    body{
+        background-attachment:scroll;
+    }
+
+    .seccion_inicio{
+        height:auto;
+        min-height:100vh;
+    }
+
     .contenedor_inicio{
-        padding-left:30px;
+        padding:150px 20px 50px;
+        min-height:100vh;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
     }
 
     .nombre{
-        left:30px;
-        padding:16px 70px 16px 24px;
+        position:relative;
+        left:auto;
+        top:auto;
+        width:min(100%, 520px);
+        padding:16px 24px;
         font-size:22px;
     }
 
-    .footer_inicio{
+    .imagen_inicio{
+        position:relative;
+        top:auto;
+        left:auto;
+        width:100%;
+        max-width:520px;
+        height:auto;
+        margin-top:18px;
+    }
+
+    .footer_pagina{
+        padding:30px 20px;
+    }
+
+    .footer_contenedor{
         flex-direction:column;
-        gap:20px;
-        align-items:flex-start;
+        gap:30px;
+        text-align:center;
+    }
+
+    .footer_info{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .footer_enlaces{
+        justify-content:center;
     }
 
     .rol{
@@ -590,8 +647,14 @@ body.homepage{
     }
 
     .btn-descargar-cv{
-        left:70px;
+        left:50%;
         bottom:30px;
+        transform:translateX(-50%);
+        white-space:nowrap;
+    }
+
+    .sobre_texto_inferior{
+        font-size:clamp(1rem, 2.2vw, 1.3rem) !important;
     }
 
     .encabezado_bloque h2{
@@ -602,8 +665,14 @@ body.homepage{
 @media (max-width: 480px){
 
     .menu a{
-        margin:0 8px;
-        padding:8px 16px;
+        margin:0 4px;
+        padding:7px 10px;
+        font-size:0.9rem;
+    }
+
+    .nombre{
+        padding:14px 18px;
+        font-size:18px;
     }
 
     .sobre_visual{
@@ -614,15 +683,24 @@ body.homepage{
     }
 
     .sobre_texto p{
-        font-size:18px;
-        line-height:1.3;
+        font-size:16px;
+        line-height:1.35;
     }
 
     .sobre_texto_inferior p{
-        font-size:17px;
+        font-size:15px;
+        line-height:1.5;
     }
 
     .encabezado_bloque h2{
         font-size:24px;
+    }
+
+    .footer_nombre{
+        font-size:20px;
+    }
+
+    .footer_slogan{
+        font-size:12px;
     }
 }
