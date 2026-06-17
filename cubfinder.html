@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cubfinder - Portafolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="estilos/estilos.css">
+<style>
+    .seccion_proyecto_detalle{
+        background:transparent;
+        padding:90px 7% 65px;
+        position:relative;
+        overflow:hidden;
+    }
+
+    .proyecto_detalle_contenido{
+        max-width: 800px;
+        margin: 0 auto;
+        background: white;
+        padding: 40px;
+        border-radius: 16px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .proyecto_titulo_detalle{
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--negro);
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .proyecto_resumen{
+        font-size: 16px;
+        line-height: 1.6;
+        color: #333;
+        margin-bottom: 30px;
+    }
+
+    .proyecto_seccion{
+        margin-bottom: 25px;
+    }
+
+    .proyecto_seccion_titulo{
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--azul);
+        margin-bottom: 10px;
+    }
+
+    .proyecto_lista{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .proyecto_item{
+        background: var(--gris-suave);
+        padding: 8px 12px;
+        border-radius: 6px;
+        font-size: 14px;
+        color: var(--negro);
+    }
+
+    .proyecto_github{
+        display: inline-block;
+        background: var(--azul);
+        color: white;
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        margin-top: 20px;
+    }
+
+    .proyecto_github:hover{
+        background: var(--amarillo);
+        color: var(--negro);
+    }
+</style>
+</head>
+
+<body>
+
+<header class="navegacion">
+
+<nav class="menu">
+
+<a href="index.html">Inicio</a>
+<a href="sobre-mi.html">Sobre mí</a>
+<a href="formacion.html">Formación Complementaria</a>
+<a href="proyectos.html">Proyectos</a>
+<a href="cubfinder-en.html" class="lang-toggle" style="margin-left: 20px; font-weight: bold;">Inglés</a>
+
+</nav>
+
+</header>
+
+
+<section class="seccion_proyecto_detalle">
+
+    <div class="proyecto_detalle_contenido">
+
+        <h1 class="proyecto_titulo_detalle">Cubfinder</h1>
+
+        <p class="proyecto_resumen">
+            Cubfinder es una plataforma integral para la gestión y reserva optimizada de cubículos. El sistema maximiza la eficiencia del flujo de usuarios mediante monitoreo en tiempo real y un robusto esquema de seguridad integrado con Azure. En mi rol dual, garanticé la estabilidad del software como QA mediante pruebas rigurosas, y lideré el desarrollo Front-End en Android Studio, transformando prototipos de alta fidelidad de Figma en una interfaz intuitiva y funcional.
+        </p>
+
+        <div class="proyecto_seccion">
+            <h3 class="proyecto_seccion_titulo">Tecnologías Usadas</h3>
+            <div class="proyecto_lista">
+                <span class="proyecto_item">Android Studio</span>
+                <span class="proyecto_item">Figma</span>
+                <span class="proyecto_item">Azure Cloud</span>
+                <span class="proyecto_item">Java/Kotlin</span>
+            </div>
+        </div>
+
+        <div class="proyecto_seccion">
+            <h3 class="proyecto_seccion_titulo">Competencias Técnicas</h3>
+            <div class="proyecto_lista">
+                <span class="proyecto_item">Diseño UI/UX</span>
+                <span class="proyecto_item">Desarrollo Móvil</span>
+                <span class="proyecto_item">Gestión de Bases de Datos</span>
+                <span class="proyecto_item">Seguridad en la Nube</span>
+            </div>
+        </div>
+
+        <a href="https://github.com/Ivan-Jr/CubfinderIngenieria" class="proyecto_github" target="_blank">Ver en GitHub</a>
+
+        <div class="proyecto_seccion">
+            <h3 class="proyecto_seccion_titulo">Galería de Capturas de la App</h3>
+            <div class="galeria_imagenes" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px;">
+                <img src="imag/cubfinder1.png" alt="Captura 1" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <img src="imag/cubfinder2.png" alt="Captura 2" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <img src="imag/cubfinder3.png" alt="Captura 3" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <img src="imag/cubfinder4.png" alt="Captura 4" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer_pagina">
+
+<div class="footer_contenedor">
+    <div class="footer_info">
+        <img src="imag/profile.png" alt="Profile" style="height: 60px; width: auto; border-radius: 50%; margin-right: 15px; vertical-align: middle;">
+        <h3 class="footer_nombre">© 2026 Iván Portillo</h3>
+        <p class="footer_slogan">Transformando ideas en experiencias interactivas.</p>
+    </div>
+
+    <div class="footer_enlaces">
+        <a id="btn-github" class="btn-red-social" href="https://github.com/Ivan-Jr" title="GitHub">
+            <svg width="32px" height="32px" viewBox="0 0 15 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.35762 2.14496C8.13548 1.86102 6.86444 1.86102 5.6423 2.14497C4.93642 1.71169 4.39704 1.51286 4.00502 1.42909C3.79189 1.38354 3.62296 1.37216 3.4959 1.37556C3.43249 1.37725 3.38001 1.38261 3.33821 1.38905C3.31733 1.39226 3.29919 1.39573 3.28375 1.39911C3.27603 1.4008 3.26899 1.40247 3.26264 1.40408L3.25362 1.40643L3.2495 1.40756L3.24753 1.40811L3.24563 1.40865C3.24562 1.40865 3.24563 1.40864 3.24563 1.40865C3.2452 1.40884 3.24731 1.41452 3.38299 1.88895L3.24563 1.40865C3.1036 1.44926 2.9868 1.55061 2.92657 1.68549C2.75841 2.06202 2.66657 2.46816 2.65635 2.88041C2.64875 3.18677 2.68634 3.49199 2.76743 3.78633C2.55433 4.04445 2.3807 4.33349 2.25276 4.64407C2.08484 5.05173 1.99894 5.4885 1.99998 5.92939C2.00011 7.48194 2.45815 8.52582 3.23873 9.19657C3.78563 9.66653 4.45048 9.91658 5.11619 10.0598C5.00626 10.3652 4.97773 10.6883 4.99998 11.0176V11.6158C4.59263 11.7015 4.31135 11.6744 4.11082 11.6082C3.85884 11.525 3.66566 11.3578 3.48139 11.1175C3.38806 10.9959 3.30208 10.8623 3.21179 10.7161L3.15448 10.6228C3.08377 10.5073 3.00746 10.3828 2.93045 10.2692C2.73964 9.9878 2.45813 9.63616 2.00195 9.51639L1.51834 9.38942L1.2644 10.3566L1.74801 10.4836C1.82746 10.5045 1.93204 10.5786 2.10279 10.8304C2.16553 10.9229 2.22538 11.0206 2.29372 11.1321C2.31518 11.1671 2.33753 11.2036 2.36102 11.2417C2.45488 11.3936 2.56253 11.5627 2.68796 11.7262C2.94119 12.0563 3.28597 12.389 3.79742 12.5578C4.14883 12.6738 4.54603 12.7016 4.99998 12.6319V14.5C4.99998 14.7761 5.22384 15 5.49998 15H9.49998C9.77613 15 9.99998 14.7761 9.99998 14.5V10.9375C9.99998 10.6217 9.98623 10.333 9.89735 10.0636C10.5597 9.92381 11.2193 9.67353 11.7626 9.20319C12.5429 8.52773 13 7.47445 13 5.9125L13 5.91089C12.9975 5.13212 12.7242 4.38197 12.2325 3.78635C12.3136 3.492 12.3512 3.18678 12.3436 2.88041C12.3334 2.46816 12.2416 2.06202 12.0734 1.68549C12.0131 1.55057 11.8963 1.44921 11.7542 1.40861L11.6169 1.88937C11.7542 1.40861 11.7528 1.40821 11.7523 1.40807L11.7504 1.40752L11.7462 1.4064L11.7372 1.40405C11.7309 1.40245 11.7238 1.40078 11.7161 1.39909C11.7007 1.39571 11.6826 1.39225 11.6617 1.38904C11.6199 1.38261 11.5674 1.37725 11.504 1.37556C11.3769 1.37216 11.2079 1.38354 10.9947 1.42908C10.6026 1.51286 10.0633 1.71168 9.35762 2.14496Z"/>
+            </svg>
+        </a>
+
+        <a id="btn-linkedin" class="btn-red-social" href="https://www.linkedin.com/in/iván-portillo-8489853b6?utm_source=share_via&utm_content=profile&utm_medium=member_android" title="LinkedIn">
+            <svg fill="currentColor" width="32px" height="32px" viewBox="-2 -2 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" class="jam jam-linkedin"><path d='M19.959 11.719v7.379h-4.278v-6.885c0-1.73-.619-2.91-2.167-2.91-1.182 0-1.886.796-2.195 1.565-.113.275-.142.658-.142 1.043v7.187h-4.28s.058-11.66 0-12.869h4.28v1.824l-.028.042h.028v-.042c.568-.875 1.583-2.126 3.856-2.126 2.815 0 4.926 1.84 4.926 5.792zM2.421.026C.958.026 0 .986 0 2.249c0 1.235.93 2.224 2.365 2.224h.028c1.493 0 2.42-.989 2.42-2.224C4.787.986 3.887.026 2.422.026zM.254 19.098h4.278V6.229H.254v12.869z' /></svg>
+        </a>
+
+        <a id="btn-correo" class="btn-red-social" href="mailto:portilloivan919@gmail.com" title="Email">
+            <svg fill="currentColor" width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <title>gmail</title>
+            <path d="M30.996 7.824v17.381c0 0 0 0 0 0.001 0 1.129-0.915 2.044-2.044 2.044-0 0-0 0-0.001 0h-4.772v-11.587l-8.179 6.136-8.179-6.136v11.588h-4.772c0 0 0 0-0 0-1.129 0-2.044-0.915-2.044-2.044 0-0 0-0.001 0-0.001v0-17.381c0-0 0-0.001 0-0.001 0-1.694 1.373-3.067 3.067-3.067 0.694 0 1.334 0.231 1.848 0.619l-0.008-0.006 10.088 7.567 10.088-7.567c0.506-0.383 1.146-0.613 1.84-0.613 1.694 0 3.067 1.373 3.067 3.067v0z"></path>
+            </svg>
+        </a>
+    </div>
+</div>
+
+</footer>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
