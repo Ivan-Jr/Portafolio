@@ -3,8 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portafolio profesional de Iván Portillo, estudiante de Ingeniería y Redes Informáticas especializado en desarrollo web, diseño de interfaces y programación.">
+<meta name="keywords" content="Iván Portillo, portafolio profesional, desarrollo web, programación, frontend, diseño de interfaces, redes informáticas, tecnología">
+<meta name="author" content="Iván Portillo">
 
-<title>Portafolio</title>
+<title>Iván Portillo | Portafolio Profesional</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -32,17 +35,65 @@
 
 <div class="contenedor_inicio">
 
-    <img src="imag/profile.png" alt="Profile" style="position: absolute; top: 20px; right: 20px; width: 80px; height: 80px; border-radius: 50%;">
+    <img src="imag/profile.png" alt="Foto de perfil de Iván Portillo" style="position: absolute; top: 20px; right: 20px; width: 80px; height: 80px; border-radius: 50%;">
 
     <div class="nombre">
     <h1>Iván Portillo</h1>
     <p>Estudiante de Ingeniería y Redes Informáticas</p>
     </div>
 
-    <img src="imag/4849356.jpg" class="imagen_inicio">
+    <img src="imag/4849356.jpg" class="imagen_inicio" alt="Ilustración de tecnología relacionada con el desarrollo web">
 
 </div>
 
+</section>
+
+<section id="contacto" class="seccion_contacto">
+    <div class="contenedor_contacto">
+        <div class="info_contacto">
+            <span class="etiqueta_bloque">CONTACTO</span>
+            <h3>Hablemos sobre tu próximo proyecto</h3>
+            <p>Estoy disponible para colaborar en ideas, desarrollo web, diseño de interfaces y soluciones tecnológicas.</p>
+            <div class="contacto_item">
+                <div>
+                    <strong>Correo</strong>
+                    <span>portilloivan919@gmail.com</span>
+                </div>
+            </div>
+            <div class="contacto_item">
+                <div>
+                    <strong>Ubicación</strong>
+                    <span>El Salvador</span>
+                </div>
+            </div>
+            <p><a href="sobre-mi.html#trayectoria" style="color:var(--azul); font-weight:600; text-decoration:none;">Ver trayectoria profesional</a> · <a href="proyectos.html" style="color:var(--azul); font-weight:600; text-decoration:none;">Explorar proyectos</a></p>
+        </div>
+
+        <div class="formulario_contacto">
+            <form id="contact-form" method="POST" action="https://formspree.io/f/mzdqlvqv">
+                <div class="grid_formulario">
+                    <div class="campo_form">
+                        <label for="nombre">Nombre *</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="campo_form">
+                        <label for="segundo_nombre">Segundo nombre *</label>
+                        <input type="text" id="segundo_nombre" name="segundo_nombre" placeholder="Tu segundo nombre" required>
+                    </div>
+                    <div class="campo_form">
+                        <label for="email">Correo electrónico *</label>
+                        <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+                    </div>
+                </div>
+                <div class="campo_form" style="margin-top:18px;">
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Cuéntame sobre tu idea o proyecto" required></textarea>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar mensaje</button>
+                <p id="form-message" class="mensaje-form" aria-live="polite"></p>
+            </form>
+        </div>
+    </div>
 </section>
 
 <footer class="footer_pagina">
