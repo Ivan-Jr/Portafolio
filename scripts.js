@@ -216,10 +216,72 @@ const initFloatingContact = () => {
   })
 }
 
+const initDocumentModal = () => {
+  const modal = document.querySelector(".document-modal")
+  if (!modal) return
+
+  const closeButton = modal.querySelector(".document-modal-close")
+  const preview = modal.querySelector(".document-modal-preview")
+  const openFullButton = modal.querySelector(".document-modal-open")
+  const title = modal.querySelector(".document-modal-title")
+
+  const openDocument = (pdfUrl, label) => {
+    if (preview) {
+      preview.src = pdfUrl
+      preview.setAttribute("src", pdfUrl)
+    }
+    if (title) title.textContent = label
+    if (openFullButton) {
+      openFullButton.href = pdfUrl
+      openFullButton.setAttribute("href", pdfUrl)
+    }
+    modal.classList.add("is-open")
+    modal.setAttribute("aria-hidden", "false")
+    modal.style.display = "flex"
+    document.body.style.overflow = "hidden"
+  }
+
+  const closeModal = () => {
+    modal.classList.remove("is-open")
+    modal.setAttribute("aria-hidden", "true")
+    modal.style.display = "none"
+    document.body.style.overflow = ""
+    if (preview) preview.removeAttribute("src")
+  }
+
+  document.querySelectorAll(".document-open-btn").forEach(button => {
+    button.addEventListener("click", (event) => {
+      event.preventDefault()
+      event.stopPropagation()
+      openDocument(button.dataset.pdf, button.dataset.title)
+    })
+  })
+
+  if (closeButton) {
+    closeButton.addEventListener("click", (event) => {
+      event.preventDefault()
+      closeModal()
+    })
+  }
+
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      closeModal()
+    }
+  })
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && modal.classList.contains("is-open")) {
+      closeModal()
+    }
+  })
+}
+
 const initAll = () => {
   initMenuBehavior()
   initLanguageScrollRestore()
   initPageRestore()
+  initDocumentModal()
   initFloatingContact()
 }
 
